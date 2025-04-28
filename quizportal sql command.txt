@@ -1,0 +1,30 @@
+1.     create table institute(institute_id int primary key,institute_name varchar(50),address varchar(50),phone varchar(15),email varchar(50),reg_no int );
+2.     create table courses(course_id varchar(20),course_name varchar(20),duration varchar(20));
+3.     create table students(roll_no int primary key,course_id varchar(20),name varchar(20),address varchar(100),phone varchar(15),email varchar(50));
+4.     create table python(q_id varchar(15),q_name varchar(100),option_a varchar(30),option_b varchar(30),option_c varchar(30),option_d varchar(30),correct varchar(30));
+5.     create table java(q_id varchar(15),q_name varchar(100),option_a varchar(30),option_b varchar(30),option_c varchar(30),option_d varchar(30),correct varchar(30));
+6.     create table cpp(q_id varchar(15),q_name varchar(100),option_a varchar(30),option_b varchar(30),option_c varchar(30),option_d varchar(30),correct varchar(30));
+7.     create table mysql(q_id varchar(15),q_name varchar(100),option_a varchar(30),option_b varchar(30),option_c varchar(30),option_d varchar(30),correct varchar(30));
+8.     create table examschedule(roll_no int primary key,course_id varchar(20),name varchar(20),date_of_exam varchar(50)); 
+9.     create table quizappear(roll_no int primary key,course_id varchar(20),name varchar(20),date_of_appear varchar(50)); 
+10.    create table reappear(roll_no int primary key,course_name varchar(20),result_score varchar(20),attempt varchar(50));
+11.    create table resulttable(roll_no int primary key,course_id varchar(20),name varchar(20),totalscore varchar(50));
+12.   create table certificateissue(roll_no int primary key,course_id varchar(20),name varchar(20),totalscore varchar(50));
+
+mysql> show tables;
++----------------------+
+| Tables_in_quizportal |
++----------------------+
+| courses              |
+| cpp                  |
+| examschedule         |
+| institute            |
+| java                 |
+| mysql                |
+| python               |
+| quizappear           |
+| reappear             |
+| resulttable          |
+| students             |
++----------------------+
+11 rows in set (0.01 sec)
